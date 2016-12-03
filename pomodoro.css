@@ -1,0 +1,34 @@
+body {
+  background-image: url(https://images.unsplash.com/photo-1461268819612-35d5049e338b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=eaa9cfa8fdd0e7efe0a0a7c688fc00ad);
+}
+
+header {
+  background-color: #900C3F;
+  color: #FFC300;
+  height: 100px;
+}
+
+#sessiontimer {
+  background-color: #e74c3c;
+  border: 6px solid #58d68d;
+  color: #FFC300;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+button {
+  background-color: #58d68d;
+  color: #C70039;
+}
+
+.block {
+  display: inline-block;
+}
+
+h3 {
+  color: #fdfefe;
+}
