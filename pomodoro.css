@@ -7,7 +7,7 @@ body {
   color: #FFC300;
   height: 100px;
   margin: 0 auto 50px;
-  padding: 20px;
+  padding: 30px;
 }
 
 #sessiontimer {
@@ -25,6 +25,10 @@ body {
 button {
   background-color: #58d68d;
   color: #C70039;
+}
+
+#controlbuttons {
+  margin-top: 20px;
 }
 
 .block {
