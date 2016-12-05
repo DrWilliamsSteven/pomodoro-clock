@@ -6,6 +6,8 @@ body {
   background-color: #900C3F;
   color: #FFC300;
   height: 100px;
+  margin: 0 auto 50px;
+  padding: 20px;
 }
 
 #sessiontimer {
