@@ -2,10 +2,12 @@ body {
   background-image: url(https://images.unsplash.com/photo-1461268819612-35d5049e338b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=eaa9cfa8fdd0e7efe0a0a7c688fc00ad);
 }
 
-header {
+#header {
   background-color: #900C3F;
   color: #FFC300;
   height: 100px;
+  margin: 0 auto 50px;
+  padding: 30px;
 }
 
 #sessiontimer {
@@ -23,6 +25,10 @@ header {
 button {
   background-color: #58d68d;
   color: #C70039;
+}
+
+#controlbuttons {
+  margin-top: 20px;
 }
 
 .block {
