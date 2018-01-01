@@ -1,34 +1,34 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
   var timeremain = parseInt($('#sessiontime').html());
   var breaktimeremain = parseInt($('#breaktime').html());
   var buzzer = $('#buzzer')[0];
 
-  $('#sessionminus').click(function() {
+  $('#sessionminus').click(function () {
     if (timeremain > 1) {
       timeremain -= 1;
       $('#sessiontime').html(timeremain + ":00");
     }
   });
 
-  $('#sessionplus').click(function() {
+  $('#sessionplus').click(function () {
     timeremain += 1;
     $('#sessiontime').html(timeremain + ":00");
   });
 
-  $('#breakminus').click(function() {
+  $('#breakminus').click(function () {
     if (breaktimeremain > 1) {
       breaktimeremain -= 1;
       $('#breaktime').html(breaktimeremain + ":00");
     }
   });
 
-  $('#breakplus').click(function() {
+  $('#breakplus').click(function () {
     breaktimeremain += 1;
     $('#breaktime').html(breaktimeremain + ":00");
   });
 
-  $('#start').click(function() {
+  $('#start').click(function () {
     var counter = setInterval(timer, 1000);
     timeremain *= 60;
     breaktimeremain *= 60;
@@ -65,7 +65,7 @@ $(document).ready(function() {
     }
   });
 
-  $('#reset').click(function() {
+  $('#reset').click(function () {
     timeremain = 25;
     $('#sessiontime').html(timeremain + ":00");
     breaktimeremain = 5;

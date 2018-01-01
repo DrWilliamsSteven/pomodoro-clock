@@ -1,44 +1,57 @@
 <html>
 
 <head>
-<title>Pomodoro Clock</title>
+  <title>Pomodoro Clock</title>
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="pomodoro.css">
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="pomodoro.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="pomodoro.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="pomodoro.js"></script>
 
-<audio id='buzzer' src='http://soundbible.com/grab.php?id=1506&type=mp3' type='audio/mpeg' ></audio>
+  <audio id='buzzer' src='http://soundbible.com/grab.php?id=1506&type=mp3' type='audio/mpeg'></audio>
 </head>
 
 <body>
-    <div id='header'>
-      <h3>Pomodoro Clock</h3>
+  <div id='header'>
+    <h3>Pomodoro Clock</h3>
+  </div>
+
+  <div id='sessiontimer'>
+
+    <div id='sessiontimebuttons'>
+      <h3>Time Remaining:</h3>
+      <h1 id='sessiontime'>25:00</h1>
+      <button id='sessionminus' class='btn'>
+        <strong>-</strong>
+      </button>
+      <button id='sessionplus' class='btn'>
+        <strong>+</strong>
+      </button>
     </div>
 
- <div id='sessiontimer'>
-  
-  <div id='sessiontimebuttons'>
-    <h3>Time Remaining:</h3>
-    <h1 id='sessiontime'>25:00</h1>
-    <button id='sessionminus' class='btn'><strong>-</strong></button>
-    <button id='sessionplus' class='btn'><strong>+</strong></button>
-  </div>
-  
-  <div id='breaktimebuttons'>
-    <h3>Break Time:</h3>
-    <h1 id='breaktime'>5:00</h1>
-    <button id='breakminus' class='btn'><strong>-</strong></button>
-    <button id='breakplus' class='btn'><strong>+</strong></button>
-  </div>
+    <div id='breaktimebuttons'>
+      <h3>Break Time:</h3>
+      <h1 id='breaktime'>5:00</h1>
+      <button id='breakminus' class='btn'>
+        <strong>-</strong>
+      </button>
+      <button id='breakplus' class='btn'>
+        <strong>+</strong>
+      </button>
+    </div>
 
-  <div id='controlbuttons'>
-    <button id='start' class='btn'><strong>Start</strong></button>
-    <button id='reset' class='btn'><strong>Reset</strong></button>
+    <div id='controlbuttons'>
+      <button id='start' class='btn'>
+        <strong>Start</strong>
+      </button>
+      <button id='reset' class='btn'>
+        <strong>Reset</strong>
+      </button>
+    </div>
+
   </div>
-  
-  </div>
-</body>  
+</body>
 
 </html>
